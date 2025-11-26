@@ -5,15 +5,19 @@
 ### User Authentication and Profile Management
 ![Sophia Screenshot](https://raw.githubusercontent.com/AlexBiobelemo/Sophia---Organize-share-generate-code-snippets./main/Screenshot/Screenshot%202025-11-25%20123254.png)
 **Description:** Allows users to register, log in, manage their profile details (username, email, avatar), and change passwords securely.
-![Screenshot](Screenshot/Screenshot 2025-11-25 123254.png)
-[Profile Management Video](Videos/Profile Management.mp4)
 **Technical Implementation:** Flask-Login for session management, SQLAlchemy for user data persistence, password hashing using Werkzeug.
 
 ### Code Snippet Management
+<video src="https://raw.githubusercontent.com/AlexBiobelemo/Sophia---Organize-share-generate-code-snippets./main/Videos/Code%20Snippet%20Management%201.mp4" controls loop muted width="600">
+    Your browser does not support the video tag.
+</video>
+
+<video src="https://raw.githubusercontent.com/AlexBiobelemo/Sophia---Organize-share-generate-code-snippets./main/Videos/Code%20Snippet%20Management%202.mp4" controls loop muted width="600">
+    Your browser does not support the video tag.
+</video>
 **Description:** Users can create, view, edit, and delete code snippets. Snippets can be categorized into collections and tagged for easy retrieval. Supports syntax highlighting for a wide range of programming languages.
 **Technical Implementation:** SQLAlchemy models for `Snippet` and `Collection`, WTForms for input validation, Pygments for syntax highlighting in frontend.
-[Code Snippet Management 1 Video](Videos/Code Snippet Management 1.mp4)
-[Code Snippet Management 2 Video](Videos/Code Snippet Management 2.mp4)
+
 
 ### Collection Organization
 **Description:** Provides hierarchical organization for snippets through nested collections. Users can rename, delete, and reorder collections.
@@ -50,5 +54,6 @@
 - **Load Limits:** Designed for individual users or small teams. AI generation tasks are offloaded to a background worker (Celery) to prevent blocking the main application.
 - **Browser Compatibility:** Tested on modern web browsers (Chrome, Firefox, Safari, Edge).
 - **Database:** SQLite is suitable for small to medium-sized datasets. For larger deployments, the SQLAlchemy ORM allows for easy migration to PostgreSQL or MySQL.
+
 
 
