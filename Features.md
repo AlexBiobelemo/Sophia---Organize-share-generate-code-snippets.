@@ -3,6 +3,7 @@
 ## Core Capabilities
 
 ### User Authentication and Profile Management
+![Sophia Screenshot](https://raw.githubusercontent.com/AlexBiobelemo/Sophia---Organize-share-generate-code-snippets./main/Screenshot/Screenshot%202025-11-25%20123254.png)
 **Description:** Allows users to register, log in, manage their profile details (username, email, avatar), and change passwords securely.
 ![Screenshot](Screenshot/Screenshot 2025-11-25 123254.png)
 [Profile Management Video](Videos/Profile Management.mp4)
@@ -49,4 +50,5 @@
 - **Load Limits:** Designed for individual users or small teams. AI generation tasks are offloaded to a background worker (Celery) to prevent blocking the main application.
 - **Browser Compatibility:** Tested on modern web browsers (Chrome, Firefox, Safari, Edge).
 - **Database:** SQLite is suitable for small to medium-sized datasets. For larger deployments, the SQLAlchemy ORM allows for easy migration to PostgreSQL or MySQL.
+
 
