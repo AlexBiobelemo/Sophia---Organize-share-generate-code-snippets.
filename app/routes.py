@@ -1310,7 +1310,7 @@ def download_selected_snippets():
                     yield f"**Tags:** {snippet.tags}\n"
                 if snippet.collection:
                     yield f"**Collection:** {snippet.collection.name}\n"
-                yield f"**Created At:** {s.timestamp.strftime('%Y-%m-%d %H:%M:%S')}\n"
+                yield f"**Created At:** {snippet.timestamp.strftime('%Y-%m-%d %H:%M:%S')}\n"
                 if snippet.description:
                     yield "\n### Description:\n"
                     yield f"{snippet.description}\n"
